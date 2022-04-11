@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity IO is port(
+	switches: in std_logic_vector(9 downto 0);
+	LEDs: out std_logic_vector(9 downto 0));
+end;
+
+architecture sys of IO is
+begin
+	LEDs <= switches;
+end;
